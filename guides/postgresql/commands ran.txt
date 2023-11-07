@@ -1,0 +1,17 @@
+\conninfo = check connection info
+\l = check databases on server
+CREATE DATABASE students = create database named "students"
+\c students = connect to database named "students"
+\! clear = clear console
+CREATE TABLE students ( = create table named "students", incomplete will supply args
+ID SERIAL PRIMARY KEY, = create col named ID which will auto increment (1, 2, 3 ...), and assign as PK. comma indicates args not complete
+name VARCHAR(255),
+email VARCHAR(255),
+age INT,
+dob DATE); = rest of args. ); indicates end of create statement
+\dt = display table. show table
+
+
+INSERT INTO students(name, email, age, dob)
+VALUES ('doky', 'doky@gmail.com', 24, '1999-10-05'), ('sami', 'sami@gmail.com', 23, '2000-06-19');
+
